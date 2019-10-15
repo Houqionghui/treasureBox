@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./css/reset.min.css">
+
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		// $(function () {
+		// 	$('.chestBtn').click(function () {
+
+		// 		// 弹出框
+		// 		$('.prize-overlay').show();
+		// 		// 中奖概率
+		// 		var arr = ['50元', '30元', '10元'];
+		// 		var rand = Math.random();
+		// 		if (rand < 0.004) {
+		// 			$('#result').html(arr[0]);
+		// 		} else if (rand < 0.024) {
+		// 			$('#result').html(arr[1]);
+		// 		} else {
+		// 			$('#result').html(arr[2]);
+		// 		} 
+		// 	});
+
+		// })
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div id="chest" class="chest">
+			<div class="chest-tip">
+				<div class="chest-tip-text">
+					<span>您抽中的是</span><span class="spantxt"></span><br>
+				</div>
+				<div class="chest-tip-text">
+					<span class="spantxt  spantxt1"></span><span>您选择的是</span><span
+						class="xiangzi"></span><span>选择一把钥匙打开吧</span>
+				</div>
+			</div>
+
+			<div class="chest">
+				<ul class="box-list">
+
+				</ul>
+			</div>
+
+			<div class="chest-box">
+				<ul class="chest-list">
+					<li class="chestBtn chest1">
+						<img class=" images" src="./images/yaoshi.png">
+					</li>
+					<li class="chestBtn chest1">
+						<img class=" images" src="./images/yaoshi.png">
+					</li>
+					<li class="chestBtn chest1">
+						<img class=" images" src="./images/yaoshi.png">
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="prize-overlay" id="prize-overlay">
+			<div class="overlay-title">
+				<img src="images/overlay-title.png">
+			</div>
+			<div class="outFrame">
+				<div class="prize-txt">
+					<p class="resultTip">
+						<img src="images/congratulation.png">
+					</p>
+					<br />
+					<p id="result" class="result"></p>
+					<br />
+					<p class="resultTip"></p>
+				</div>
+
+
+			</div>
+			<div class="out"><a href="">退出</a></div>
+
+		</div>
+
+	</div>
+<script src="./js/box.js"> </script>
+<script>
+let oOver=document.querySelector('.out');
+oOver.addEventListener('click', function () {
+      window.location.reload();
+    }, false);
+</script>
+</body>
+
+</html>

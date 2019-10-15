@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	color:#000; 
+	font-size:12px;
+	font-family:"Microsoft YaHei";
+}
+ul,ol{
+	list-style-type:none;
+}
+select,input,img,select,textarea{
+	vertical-align:middle;
+	color: #000;
+}
+input,textarea{ 
+	font-size:12px;
+	font-family:"Microsoft YaHei";
+}
+
+.clear{
+	clear:both;
+}
+/*按钮按下通用样式*/
+.btnCommon:hover,.btnCommon:active{
+	background: #777777;
+	box-shadow: 0 4px 0 #676767;
+}
+
+
+.goldEggsDiv {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.centerPage_Img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.chest-box{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+.chest-box ul{
+	width: 100%;
+	height: auto;
+	margin: 0 0 20px 0;
+}
+.chest-box ul li img{
+	width: 140%;
+	height:auto;
+}
+.chest-list li{
+	width: 30%;
+	height: auto;
+	float: left;
+}
+
+
+
+.chest1{
+	-webkit-animation: tada 4.1s infinite;
+	-moz-animation: tada 4.1s infinite;
+	animation: tada 4.1s infinite;
+}
+.chest2{
+	-webkit-animation: tada 5.9s infinite;
+	-moz-animation: tada 5.9s infinite;
+	animation: tada 5.9s infinite;
+}
+.chest3{
+	-webkit-animation: tada 3.3s infinite;
+	-moz-animation: tada 3.3s infinite;
+	animation: tada 3.3s infinite;
+}
+
+.chest4{
+	-webkit-animation: tada4.7s infinite;
+	-moz-animation: tada 4.7s infinite;
+	animation: tada 4.7s infinite;
+}
+.chest5{
+	-webkit-animation: tada 5.3s infinite;
+	-moz-animation: tada 5.3s infinite;
+	animation: tada 5.3s infinite;
+}
+@keyframes tada {
+    0% {transform: scale(1);}    
+    2.5%, 5% {transform: scale(0.9) rotate(-3deg);}
+    7.5%, 12.5%, 17.5%, 22.5% {transform: scale(1.1) rotate(3deg);}
+    10%, 15%, 20% {transform: scale(1.1) rotate(-3deg);}
+    26% {transform: scale(1) rotate(0);}
+}
+@-webkit-keyframes tada {
+    0% {-webkit-transform: scale(1);}    
+    2.5%, 5% {-webkit-transform: scale(0.9) rotate(-3deg);}
+    7.5%, 12.5%, 17.5%, 22.5% {-webkit-transform: scale(1.1) rotate(3deg);}
+    10%, 15%, 20% {-webkit-transform: scale(1.1) rotate(-3deg);}
+    26% {-webkit-transform: scale(1) rotate(0);}
+}
